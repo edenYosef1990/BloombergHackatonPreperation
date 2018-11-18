@@ -28,7 +28,7 @@ def minBase(number):
         max_base_X=max_base_X if (int(temp_num) <= int(max_base_X)) else temp_num
     return max_base_X
 
-def CalcFirstNum(Number,base):
+def CalcNum(Number,base):
     finalNum=0
     multi=0
     for c in reversed(str(Number)):
