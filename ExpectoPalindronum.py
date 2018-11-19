@@ -12,8 +12,8 @@ data = sys.stdin.read().splitlines()
 
 
 def minPaliLength(word):
-    for i in reversed(range(0,len(word)-1)):
-        temp_word = word[::-1][i:len(word)-1]
+    for i in reversed(range(0,len(word))):
+        temp_word = word[i:len(word)][::-1]
         tested_word = temp_word+str(word)
         if tested_word == tested_word[::-1]:
             return len(tested_word)
